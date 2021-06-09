@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:background="#8cffffff"
+        android:padding="20dp"
+        android:text="Open Camera" />
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+        <com.sssakib.livenessdetection.CircularSurfaceView
+            android:id="@+id/surfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             />
+
+
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/tv_capture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="#8cffffff"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="Please Put your Face Middle of the frame.\nand\n Blink your eyes several times to capture photo"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+
+</LinearLayout>
